@@ -44,6 +44,6 @@ func main() {
 	apiDeleteRouter := bh.Methods(http.MethodGet).Subrouter()
 	apiDeleteRouter.HandleFunc("/books/api/delete/{id:[0-9]+}", ph.DeleteBookAPI)
 
-	log.Println("Listening on port 6969...")
-	log.Fatal(http.ListenAndServe(":6969", bh))
+	log.Println("Listening on port 8080...")
+	log.Fatal(http.ListenAndServe(":8080", bh))
 }
