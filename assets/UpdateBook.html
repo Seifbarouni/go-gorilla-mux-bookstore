@@ -1,0 +1,16 @@
+<body>
+  {{range .}}
+  <p>{{.ID}} - {{.Title}} - {{.Author}} - {{.Price}}</p>
+  {{end}}
+  <a href="/books/add">Add Book</a>
+  <a href="/books/delete">Delete Book</a>
+  <a href="/books/update">Update Existing Book</a>
+  <h3>Put the ID of the book you want to update</h3>
+  <form action="/books/update/process">
+    <input type="number" name="ID" placeholder="ID" required />
+    <input type="text" name="title" placeholder="title" />
+    <input type="text" name="author" placeholder="author" />
+    <input type="text" name="price" placeholder="price" />
+    <input type="submit" />
+  </form>
+</body>

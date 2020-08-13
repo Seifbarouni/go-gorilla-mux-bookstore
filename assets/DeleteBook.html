@@ -1,0 +1,12 @@
+<body>
+  {{range .}}
+  <p>{{.ID}} - {{.Title}} - {{.Author}} - {{.Price}}</p>
+  {{end}}
+  <a href="/books/add">Add Book</a>
+  <a href="/books/delete">Delete Book</a>
+  <h3>Put the ID of the book you want to delete</h3>
+  <form action="/books/delete/process">
+    <input type="number" name="ID" placeholder="ID" required />
+    <input type="submit" />
+  </form>
+</body>

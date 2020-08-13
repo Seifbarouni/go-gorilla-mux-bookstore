@@ -1,0 +1,8 @@
+<body style="font-weight: bold;">
+  {{range .}}
+  <p>{{.ID}} - {{.Title}} - {{.Author}} - {{.Price}}$</p>
+  {{end}}
+  <a href="/books/add">Add Book</a>
+  <a href="/books/delete">Delete Book</a>
+  <a href="/books/update">Update Existing Book</a>
+</body>
